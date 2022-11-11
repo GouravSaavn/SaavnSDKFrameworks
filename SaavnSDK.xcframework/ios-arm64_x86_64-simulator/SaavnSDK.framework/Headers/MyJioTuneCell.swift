@@ -42,8 +42,12 @@ final class MyJioTuneCell: BaseModuleCell {
         imageView.backgroundColor = Styles_n.subtleColor()
         titleLabel.textColor = Styles_n.itemTitleColor()
         subtitleLabel.textColor = Styles_n.itemMetaColor()
-        customButton.backgroundColor = Settings.singleton().isDarkMode ? UIColor(rgb: 0x30343d) : UIColor(rgb: 0xE9E9E9)
-        customButton.setTitleColor(Styles_n.highlightColor(), for: .normal)
+//        customButton.backgroundColor = Settings.singleton().isDarkMode ? UIColor(rgb: 0x30343d) : UIColor(rgb: 0xE9E9E9)
+//        customButton.setTitleColor(Styles_n.highlightColor(), for: .normal)
+        customButton.backgroundColor = Styles_n.highlightColor()
+        
+        customButton.setTitleColor(UIColor(rgb: 0xE9E9E9), for: .normal)
+
         customButton.addTarget(self, action: #selector(removeJiotune), for: .touchUpInside)
     }
     private func setupImages() {

@@ -21,6 +21,7 @@ typedef enum
 
 
 #pragma mark - Main Methods
+#pragma mark - GET METHOD : API Request
 + (void) GET:(NSString *)method
   withParams:(NSDictionary *)params
  saavnCookie:(BOOL)useCookie
@@ -33,6 +34,14 @@ typedef enum
  dataSampling:(BOOL)sampling
      success:(void(^)(id successResponse))successBlock
   andFailure:(void(^)(NSError *errorResponse))failureBlock;
+
++ (void) GET:(NSString *)method
+ withParams:(NSDictionary *)params
+saavnCookie:(BOOL)useCookie
+dataSampling:(BOOL)sampling
+showError:(BOOL)show
+    success:(void(^)(id successResponse))successBlock
+ andFailure:(void(^)(NSError *errorResponse))failureBlock;
 
 + (void) POST:(NSString *)method
    withParams:(NSDictionary *)params
@@ -51,8 +60,18 @@ typedef enum
      withParams:(NSDictionary *)params
     saavnCookie:(BOOL)useCookie
    dataSampling:(BOOL)sampling
+      showError:(BOOL)show
 acceptableContentType:(ResponseContentType)contentType
-timeOutInterval:(NSTimeInterval)timeout
+   timeOutInterval:(NSTimeInterval)timeout
+        success:(void(^)(id successResponse))successBlock
+     andFailure:(void(^)(NSError *errorResponse))failureBlock;
+
++ (void) GETURL:(NSString *)url
+     withParams:(NSDictionary *)params
+    saavnCookie:(BOOL)useCookie
+   dataSampling:(BOOL)sampling
+acceptableContentType:(ResponseContentType)contentType
+   timeOutInterval:(NSTimeInterval)timeout
         success:(void(^)(id successResponse))successBlock
      andFailure:(void(^)(NSError *errorResponse))failureBlock;
 
@@ -62,14 +81,24 @@ timeOutInterval:(NSTimeInterval)timeout
   dataSampling:(BOOL)sampling
 acceptableContentType:(ResponseContentType)contentType
        success:(void(^)(id successResponse))successBlock
-    andFailure:(void(^)(NSError *errorResponse))failureBlock;
+     andFailure:(void(^)(NSError *errorResponse))failureBlock;
 
 + (void) GETURL:(NSString *)url
-  withParams:(NSDictionary *)params
- saavnCookie:(BOOL)useCookie
-dataSampling:(BOOL)sampling
-     success:(void(^)(id successResponse))successBlock
-  andFailure:(void(^)(NSError *errorResponse))failureBlock;
+ withParams:(NSDictionary *)params
+saavnCookie:(BOOL)useCookie
+   dataSampling:(BOOL)sampling
+    success:(void(^)(id successResponse))successBlock
+     andFailure:(void(^)(NSError *errorResponse))failureBlock;
+
+
++ (void) GETURL:(NSString *)url
+ withParams:(NSDictionary *)params
+saavnCookie:(BOOL)useCookie
+   dataSampling:(BOOL)sampling
+      showError:(BOOL)show
+    success:(void(^)(id successResponse))successBlock
+     andFailure:(void(^)(NSError *errorResponse))failureBlock;
+
 
 + (void) requestURL:(NSString *)url
      withParams:(NSDictionary *)params

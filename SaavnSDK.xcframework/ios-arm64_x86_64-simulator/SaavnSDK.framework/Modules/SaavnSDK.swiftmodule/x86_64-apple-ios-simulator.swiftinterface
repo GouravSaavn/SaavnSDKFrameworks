@@ -13,6 +13,22 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class JioTuneTrendingViewController : SaavnSDK.ListVC {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func fetchData(forPage thePage: Swift.UInt)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension SaavnSDK.JioTuneTrendingViewController : Starscream.WebSocketDelegate {
+  @_Concurrency.MainActor(unsafe) public func websocketDidConnect(socket: Starscream.WebSocketClient)
+  @_Concurrency.MainActor(unsafe) public func websocketDidDisconnect(socket: Starscream.WebSocketClient, error: Swift.Error?)
+  @_Concurrency.MainActor(unsafe) public func websocketDidReceiveMessage(socket: Starscream.WebSocketClient, text: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func websocketDidReceiveData(socket: Starscream.WebSocketClient, data: Foundation.Data)
+}
+extension SaavnSDK.JioTuneTrendingViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func getScreenName() -> Swift.String!
+}
 extension SaavnSDK.SongUtil {
   @objc public static func isJioTuneAvailable(_ song: [Swift.String : Any]) -> Swift.Bool
 }
@@ -51,49 +67,6 @@ public func + <T, U, V>(lhs: T, rhs: U) -> V where T : SaavnSDK.NumberConvertibl
 public func - <T, U, V>(lhs: T, rhs: U) -> V where T : SaavnSDK.NumberConvertible, U : SaavnSDK.NumberConvertible, V : SaavnSDK.NumberConvertible
 public func * <T, U, V>(lhs: T, rhs: U) -> V where T : SaavnSDK.NumberConvertible, U : SaavnSDK.NumberConvertible, V : SaavnSDK.NumberConvertible
 public func / <T, U, V>(lhs: T, rhs: U) -> V where T : SaavnSDK.NumberConvertible, U : SaavnSDK.NumberConvertible, V : SaavnSDK.NumberConvertible
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class JioTunesViewController : SaavnSDK.GroupVC {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func updateUIMode()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
-  @_Concurrency.MainActor(unsafe) public func setupNavigationBar()
-  @_Concurrency.MainActor(unsafe) public func initNavBarItems()
-  @objc deinit
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-}
-extension SaavnSDK.JioTunesViewController : Starscream.WebSocketDelegate {
-  @_Concurrency.MainActor(unsafe) public func websocketDidConnect(socket: Starscream.WebSocketClient)
-  @_Concurrency.MainActor(unsafe) public func websocketDidDisconnect(socket: Starscream.WebSocketClient, error: Swift.Error?)
-  @_Concurrency.MainActor(unsafe) public func websocketDidReceiveMessage(socket: Starscream.WebSocketClient, text: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func websocketDidReceiveData(socket: Starscream.WebSocketClient, data: Foundation.Data)
-}
-extension SaavnSDK.JioTunesViewController : Starscream.WebSocketPongDelegate {
-  @_Concurrency.MainActor(unsafe) public func websocketDidReceivePong(socket: Starscream.WebSocketClient, data: Foundation.Data?)
-}
-extension SaavnSDK.JioTunesViewController {
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func currentJioTuneUpdated(notification: Foundation.Notification)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func removeCurrentJioTuneClicked()
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func handleDeactiveResponse(notification: Foundation.Notification)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func refreshData()
-}
-extension SaavnSDK.JioTunesViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
-}
-extension SaavnSDK.JioTunesViewController : UIKit.UISearchBarDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBar(_ searchBar: UIKit.UISearchBar, textDidChange searchText: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBarSearchButtonClicked(_ searchBar: UIKit.UISearchBar)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func searchBarTextDidEndEditing(_ searchBar: UIKit.UISearchBar)
-}
-extension SaavnSDK.JioTunesViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func getScreenName() -> Swift.String!
-}
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class JioTuneAvailableVC : SaavnSDK.SaavnVC_n {
   @objc @_Concurrency.MainActor(unsafe) public init(media: [Swift.String : Any], sectionData: Foundation.NSDictionary?, preloadedImage: UIKit.UIImage?, type: SaavnSDK.ModalViewType, parentVC: SaavnSDK.SaavnVC_n)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
@@ -160,6 +133,9 @@ extension SaavnSDK.JioTunesHomeVC {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
 }
 extension SaavnSDK.JioTunesHomeVC {
+  @_Concurrency.MainActor(unsafe) public func initNavBarItems()
+}
+extension SaavnSDK.JioTunesHomeVC {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func getScreenName() -> Swift.String!
 }
 extension SaavnSDK.JioTunesHomeVC {
@@ -187,16 +163,6 @@ extension SaavnSDK.TagsView : UIKit.UICollectionViewDelegateFlowLayout {
 }
 extension SaavnSDK.TagsView : UIKit.UICollectionViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
-}
-extension SaavnSDK.VideoPlayerVC {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var prefersStatusBarHidden: Swift.Bool {
-    @objc get
-  }
-}
-extension Foundation.NSString {
-  @objc dynamic public var nsHtmlDecoded: Foundation.NSString {
-    @objc get
-  }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AlamofireWrapper : ObjectiveC.NSObject {
   @objc public static let sharedInstance: SaavnSDK.AlamofireWrapper
@@ -240,6 +206,16 @@ extension Foundation.NSString {
   @objc public func isReachable() -> Swift.Bool
   @objc public func getCurrentReachabilityStatus() -> SaavnSDK.AlamofireWrapper.AFReachabilityStatus
   @objc deinit
+}
+extension SaavnSDK.VideoPlayerVC {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+}
+extension Foundation.NSString {
+  @objc dynamic public var nsHtmlDecoded: Foundation.NSString {
+    @objc get
+  }
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class RequestedJioTunesListVC : SaavnSDK.ListVC {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
@@ -307,22 +283,6 @@ extension UIKit.UISearchBar {
     @objc set
   }
 }
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class JioTuneTrendingViewController : SaavnSDK.ListVC {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func fetchData(forPage thePage: Swift.UInt)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension SaavnSDK.JioTuneTrendingViewController : Starscream.WebSocketDelegate {
-  @_Concurrency.MainActor(unsafe) public func websocketDidConnect(socket: Starscream.WebSocketClient)
-  @_Concurrency.MainActor(unsafe) public func websocketDidDisconnect(socket: Starscream.WebSocketClient, error: Swift.Error?)
-  @_Concurrency.MainActor(unsafe) public func websocketDidReceiveMessage(socket: Starscream.WebSocketClient, text: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func websocketDidReceiveData(socket: Starscream.WebSocketClient, data: Foundation.Data)
-}
-extension SaavnSDK.JioTuneTrendingViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func getScreenName() -> Swift.String!
-}
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class GeneralGridVC : SaavnSDK.SaavnVC_n {
   @objc @_Concurrency.MainActor(unsafe) public init?(_ data: Foundation.NSDictionary)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
@@ -354,6 +314,7 @@ extension SaavnSDK.GeneralGridVC {
 }
 extension SaavnSDK.UserData {
   @objc dynamic public func updateJioTuneOpenTS()
+  @objc dynamic public func updateJioTuneSetTS()
   @objc dynamic public func shouldHighlightVideoTab() -> ObjectiveC.ObjCBool
 }
 @objc public protocol EmptyStateViewDelegate {

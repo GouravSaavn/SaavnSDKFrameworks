@@ -16,7 +16,7 @@ final class CustomTextOverlayCell: BaseModuleCell {
         super.updateUIMode()
         titleLabel.textColor = .white
         imageContainerView.backgroundColor = .clear
-//        imageView.backgroundColor = Styles_n.subtleColor()
+        imageView.backgroundColor = Styles_n.subtleColor()
     }
     override func setupFonts() {
         titleLabel.font = Font_n.simpleHeaderTitle()
@@ -44,6 +44,11 @@ extension CustomTextOverlayCell {
     }
     private func setupBackgroundColor() {
         let colors = Util_n.getColorsFor(imageView.image)
-        self.contentView.backgroundColor = (colors?.first as? UIColor)?.withAlphaComponent(0.5)
+        let colorIndex = Settings.singleton().isDarkMode ? 1 : 0
+        let alphacomponent = Settings.singleton().isDarkMode ? 0.5 : 0.8
+        let color = colors?[colorIndex]
+        self.contentView.backgroundColor = (color as? UIColor)?.withAlphaComponent(alphacomponent)
+        
+        
     }
 }

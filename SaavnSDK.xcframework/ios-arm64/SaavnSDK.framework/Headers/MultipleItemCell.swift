@@ -6,7 +6,7 @@
 //  Copyright © 2020 Saavn. All rights reserved.
 //
 import UIKit
-import SaavnSDK
+//import SaavnSDK
 class MultipleItemCell: BaseModuleCell {
     enum ContentType { case basic, advanced }
     //MARK:- Properties

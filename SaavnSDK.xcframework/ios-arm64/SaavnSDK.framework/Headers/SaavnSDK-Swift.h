@@ -465,6 +465,12 @@ SWIFT_CLASS("_TtC8SaavnSDK18JioTuneAvailableVC")
 - (id <UIViewControllerInteractiveTransitioning> _Nullable)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning> _Nonnull)animator SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+
+@interface JioTuneAvailableVC (SWIFT_EXTENSION(SaavnSDK))
+- (NSString * _Null_unspecified)getScreenName SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class UITableView;
 
 @interface JioTuneAvailableVC (SWIFT_EXTENSION(SaavnSDK))
@@ -472,12 +478,6 @@ SWIFT_CLASS("_TtC8SaavnSDK18JioTuneAvailableVC")
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-@end
-
-
-
-@interface JioTuneAvailableVC (SWIFT_EXTENSION(SaavnSDK))
-- (NSString * _Null_unspecified)getScreenName SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -582,54 +582,6 @@ SWIFT_CLASS("_TtC8SaavnSDK14JioTunesHomeVC")
 
 
 
-SWIFT_CLASS("_TtC8SaavnSDK22JioTunesViewController")
-@interface JioTunesViewController : GroupVC
-- (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)updateUIMode;
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface JioTunesViewController (SWIFT_EXTENSION(SaavnSDK))
-- (NSString * _Null_unspecified)getScreenName SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-
-
-
-
-@interface JioTunesViewController (SWIFT_EXTENSION(SaavnSDK))
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
-@end
-
-
-@class UISearchBar;
-
-@interface JioTunesViewController (SWIFT_EXTENSION(SaavnSDK)) <UISearchBarDelegate>
-- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
-- (void)searchBarTextDidBeginEditing:(UISearchBar * _Nonnull)searchBar;
-- (void)searchBarCancelButtonClicked:(UISearchBar * _Nonnull)searchBar;
-- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
-- (void)searchBarTextDidEndEditing:(UISearchBar * _Nonnull)searchBar;
-@end
-
-
-@interface JioTunesViewController (SWIFT_EXTENSION(SaavnSDK))
-- (void)currentJioTuneUpdatedWithNotification:(NSNotification * _Nonnull)notification;
-- (void)removeCurrentJioTuneClicked;
-- (void)handleDeactiveResponseWithNotification:(NSNotification * _Nonnull)notification;
-- (void)refreshData;
-@end
-
-
 SWIFT_CLASS("_TtC8SaavnSDK14MediaUtilSwift")
 @interface MediaUtilSwift : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -693,15 +645,15 @@ SWIFT_CLASS("_TtC8SaavnSDK8TagsView")
 @end
 
 
-@interface TagsView (SWIFT_EXTENSION(SaavnSDK)) <UICollectionViewDelegateFlowLayout>
-- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
 @interface TagsView (SWIFT_EXTENSION(SaavnSDK)) <UICollectionViewDataSource>
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface TagsView (SWIFT_EXTENSION(SaavnSDK)) <UICollectionViewDelegateFlowLayout>
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -715,10 +667,10 @@ SWIFT_CLASS("_TtC8SaavnSDK11Translation")
 @end
 
 
-
 @interface UIColor (SWIFT_EXTENSION(SaavnSDK))
 - (nullable instancetype)initWithRgbHex:(NSString * _Nullable)rgbHex;
 @end
+
 
 
 
@@ -733,6 +685,7 @@ SWIFT_CLASS("_TtC8SaavnSDK11Translation")
 
 @interface UserData (SWIFT_EXTENSION(SaavnSDK))
 - (void)updateJioTuneOpenTS;
+- (void)updateJioTuneSetTS;
 - (BOOL)shouldHighlightVideoTab SWIFT_WARN_UNUSED_RESULT;
 @end
 

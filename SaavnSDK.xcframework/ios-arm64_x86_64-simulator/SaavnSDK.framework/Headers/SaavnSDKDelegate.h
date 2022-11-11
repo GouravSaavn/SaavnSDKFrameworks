@@ -135,7 +135,7 @@ static NSString *quickKeepListening = @"shortcutKeepListening";
 
 @property (nonatomic) float notificationTimeout;
 @property (nonatomic) int proBenefitFrequencyPerDay;
-@property (nonatomic, assign) BOOL overrideRegisterPushNotification, pendingForegroundEvent, blockRefresh, forceWatchUpdate,showProBenefitPromptForNewUser,showProBenefitPrompt;
+@property (nonatomic, assign) BOOL overrideRegisterPushNotification, pendingForegroundEvent, blockRefresh, forceWatchUpdate,showProBenefitPromptForNewUser,showProBenefitPrompt , shouldPlayWeeklyTopSong;
 @property (nonatomic, assign) volatile BOOL appEnteredForegroundAtleastOnce; // Dont schedule downloads if this flase
 @property (nonatomic, strong) NSURL *openUrl;
 @property (nonatomic, strong) NSDictionary *payload;
@@ -211,10 +211,9 @@ static NSString *quickKeepListening = @"shortcutKeepListening";
  - (NSInteger) countDownloadedSongsinPlaylist:(NSArray *)contents;
  */
 
-- (void) initializeDelegate:(BOOL) dark;
 - (void) endBGTaskIFAny;
 - (BOOL) isDeeplinkHandlerActive;
-
+- (void) initializeDelegate:(BOOL) dark;
 - (void) initializeDelegate;
 - (void) logOutFromJioSaavn;
 - (void) trackEventFor:(int) viewId;
@@ -222,6 +221,9 @@ static NSString *quickKeepListening = @"shortcutKeepListening";
 - (void) setCurrentTab: (MainTabs)selectedTab;
 - (MainTabs) getCurrentTab;
 - (BOOL) isPlaying;
+-(void) playWeeklyTopSongs;
+-(NSArray *)getRecommendations ;
+
 @end
 
 NS_ASSUME_NONNULL_END

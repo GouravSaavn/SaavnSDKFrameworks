@@ -13,7 +13,6 @@
 
 @property (nonatomic) BOOL isTransparent, isUnavailable, standardAccessory, hideImage, customLayout, shouldRoundImage, ignoreMetaExtras, showIndexes;
 @property (nonatomic) BOOL inAlbumView, inArtistView, hasTableIndex,isAvailableInLibrary, inPlayerView, inPlayerQueue, isBulkEditing, isSearchView, isSearchTrendingView, isJioTuneAvailable,isCurrentJioTune;
-
 @property (nonatomic) CGFloat accessoryOffset, topOffset;
 
 @property (nonatomic, strong) NSIndexPath *indexPath;

@@ -12,7 +12,7 @@
 #ifndef __SvnSenSDK
 #define COLOR_BG_WHITE 0xf6f6f6
 #else
-#define COLOR_BG_WHITE 0xFFFFFF
+#define COLOR_BG_WHITE 0xEFEFEF
 #endif
 #define COLOR_SUBTLE_WHITE 0xe6e6e6
 #define COLOR_GREY 0x3e3e3e

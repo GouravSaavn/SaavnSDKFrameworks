@@ -6,6 +6,435 @@
     "children": [
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Starscream",
+        "printedName": "Starscream",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JioTuneTrendingViewController",
+        "printedName": "JioTuneTrendingViewController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController(im)viewDidLoad",
+            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC11viewDidLoadyyF",
+            "moduleName": "SaavnSDK",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchData",
+            "printedName": "fetchData(forPage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController(im)fetchDataForPage:",
+            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC9fetchData7forPageySu_tF",
+            "moduleName": "SaavnSDK",
+            "overriding": true,
+            "objc_name": "fetchDataForPage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JioTuneTrendingViewController",
+                "printedName": "SaavnSDK.JioTuneTrendingViewController",
+                "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "SaavnSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SaavnSDK.JioTuneTrendingViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JioTuneTrendingViewController",
+                    "printedName": "SaavnSDK.JioTuneTrendingViewController",
+                    "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController(im)initWithCoder:",
+            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "SaavnSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "websocketDidConnect",
+            "printedName": "websocketDidConnect(socket:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketClient",
+                "printedName": "Starscream.WebSocketClient",
+                "usr": "s:10Starscream15WebSocketClientP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SaavnSDK29JioTuneTrendingViewControllerC19websocketDidConnect6sockety10Starscream15WebSocketClient_p_tF",
+            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC19websocketDidConnect6sockety10Starscream15WebSocketClient_p_tF",
+            "moduleName": "SaavnSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "websocketDidDisconnect",
+            "printedName": "websocketDidDisconnect(socket:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketClient",
+                "printedName": "Starscream.WebSocketClient",
+                "usr": "s:10Starscream15WebSocketClientP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SaavnSDK29JioTuneTrendingViewControllerC22websocketDidDisconnect6socket5errory10Starscream15WebSocketClient_p_s5Error_pSgtF",
+            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC22websocketDidDisconnect6socket5errory10Starscream15WebSocketClient_p_s5Error_pSgtF",
+            "moduleName": "SaavnSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "websocketDidReceiveMessage",
+            "printedName": "websocketDidReceiveMessage(socket:text:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketClient",
+                "printedName": "Starscream.WebSocketClient",
+                "usr": "s:10Starscream15WebSocketClientP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SaavnSDK29JioTuneTrendingViewControllerC26websocketDidReceiveMessage6socket4texty10Starscream15WebSocketClient_p_SStF",
+            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC26websocketDidReceiveMessage6socket4texty10Starscream15WebSocketClient_p_SStF",
+            "moduleName": "SaavnSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "websocketDidReceiveData",
+            "printedName": "websocketDidReceiveData(socket:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketClient",
+                "printedName": "Starscream.WebSocketClient",
+                "usr": "s:10Starscream15WebSocketClientP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SaavnSDK29JioTuneTrendingViewControllerC23websocketDidReceiveData6socket4datay10Starscream15WebSocketClient_p_10Foundation0K0VtF",
+            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC23websocketDidReceiveData6socket4datay10Starscream15WebSocketClient_p_10Foundation0K0VtF",
+            "moduleName": "SaavnSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getScreenName",
+            "printedName": "getScreenName()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SaavnSDK@objc(cs)JioTuneTrendingViewController(im)getScreenName",
+            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC13getScreenNameSSSgyF",
+            "moduleName": "SaavnSDK",
+            "overriding": true,
+            "objc_name": "getScreenName",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController",
+        "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC",
+        "moduleName": "SaavnSDK",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)ListVC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "SaavnSDK.ListVC",
+          "SaavnSDK.GroupVC",
+          "SaavnSDK.SaavnVC_n",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "WebSocketDelegate",
+            "printedName": "WebSocketDelegate",
+            "usr": "s:10Starscream17WebSocketDelegateP",
+            "mangledName": "$s10Starscream17WebSocketDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
@@ -467,1039 +896,6 @@
         "moduleName": "SaavnSDK",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Starscream",
-        "printedName": "Starscream",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "JioTunesViewController",
-        "printedName": "JioTunesViewController",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "viewDidLoad",
-            "printedName": "viewDidLoad()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@SaavnSDK@objc(cs)JioTunesViewController(im)viewDidLoad",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC11viewDidLoadyyF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "viewDidLoad",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "viewWillAppear",
-            "printedName": "viewWillAppear(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@SaavnSDK@objc(cs)JioTunesViewController(im)viewWillAppear:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC14viewWillAppearyySbF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "viewWillAppear:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "viewDidAppear",
-            "printedName": "viewDidAppear(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@SaavnSDK@objc(cs)JioTunesViewController(im)viewDidAppear:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC13viewDidAppearyySbF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "viewDidAppear:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl",
-              "Override"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateUIMode",
-            "printedName": "updateUIMode()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@SaavnSDK@objc(cs)JioTunesViewController(im)updateUIMode",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC12updateUIModeyyF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "updateUIMode",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "scrollViewDidScroll",
-            "printedName": "scrollViewDidScroll(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIScrollView",
-                "printedName": "UIKit.UIScrollView",
-                "usr": "c:objc(cs)UIScrollView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@SaavnSDK@objc(cs)JioTunesViewController(im)scrollViewDidScroll:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC06scrollE9DidScrollyySo08UIScrollE0CF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "scrollViewDidScroll:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setupNavigationBar",
-            "printedName": "setupNavigationBar()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SaavnSDK22JioTunesViewControllerC18setupNavigationBaryyF",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC18setupNavigationBaryyF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "initNavBarItems",
-            "printedName": "initNavBarItems()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SaavnSDK22JioTunesViewControllerC15initNavBarItemsyyF",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC15initNavBarItemsyyF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(nibName:bundle:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "JioTunesViewController",
-                "printedName": "SaavnSDK.JioTunesViewController",
-                "usr": "c:@M@SaavnSDK@objc(cs)JioTunesViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Bundle?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bundle",
-                    "printedName": "Foundation.Bundle",
-                    "usr": "c:objc(cs)NSBundle"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@SaavnSDK@objc(cs)JioTunesViewController(im)initWithNibName:bundle:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithNibName:bundle:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SaavnSDK.JioTunesViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "JioTunesViewController",
-                    "printedName": "SaavnSDK.JioTunesViewController",
-                    "usr": "c:@M@SaavnSDK@objc(cs)JioTunesViewController"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@SaavnSDK@objc(cs)JioTunesViewController(im)initWithCoder:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Required"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "websocketDidConnect",
-            "printedName": "websocketDidConnect(socket:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WebSocketClient",
-                "printedName": "Starscream.WebSocketClient",
-                "usr": "s:10Starscream15WebSocketClientP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SaavnSDK22JioTunesViewControllerC19websocketDidConnect6sockety10Starscream15WebSocketClient_p_tF",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC19websocketDidConnect6sockety10Starscream15WebSocketClient_p_tF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "websocketDidDisconnect",
-            "printedName": "websocketDidDisconnect(socket:error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WebSocketClient",
-                "printedName": "Starscream.WebSocketClient",
-                "usr": "s:10Starscream15WebSocketClientP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Error?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SaavnSDK22JioTunesViewControllerC22websocketDidDisconnect6socket5errory10Starscream15WebSocketClient_p_s5Error_pSgtF",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC22websocketDidDisconnect6socket5errory10Starscream15WebSocketClient_p_s5Error_pSgtF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "websocketDidReceiveMessage",
-            "printedName": "websocketDidReceiveMessage(socket:text:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WebSocketClient",
-                "printedName": "Starscream.WebSocketClient",
-                "usr": "s:10Starscream15WebSocketClientP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SaavnSDK22JioTunesViewControllerC26websocketDidReceiveMessage6socket4texty10Starscream15WebSocketClient_p_SStF",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC26websocketDidReceiveMessage6socket4texty10Starscream15WebSocketClient_p_SStF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "websocketDidReceiveData",
-            "printedName": "websocketDidReceiveData(socket:data:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WebSocketClient",
-                "printedName": "Starscream.WebSocketClient",
-                "usr": "s:10Starscream15WebSocketClientP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SaavnSDK22JioTunesViewControllerC23websocketDidReceiveData6socket4datay10Starscream15WebSocketClient_p_10Foundation0J0VtF",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC23websocketDidReceiveData6socket4datay10Starscream15WebSocketClient_p_10Foundation0J0VtF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "websocketDidReceivePong",
-            "printedName": "websocketDidReceivePong(socket:data:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WebSocketClient",
-                "printedName": "Starscream.WebSocketClient",
-                "usr": "s:10Starscream15WebSocketClientP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Data?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SaavnSDK22JioTunesViewControllerC23websocketDidReceivePong6socket4datay10Starscream15WebSocketClient_p_10Foundation4DataVSgtF",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC23websocketDidReceivePong6socket4datay10Starscream15WebSocketClient_p_10Foundation4DataVSgtF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "currentJioTuneUpdated",
-            "printedName": "currentJioTuneUpdated(notification:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Notification",
-                "printedName": "Foundation.Notification",
-                "usr": "s:10Foundation12NotificationV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)currentJioTuneUpdatedWithNotification:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC07currentC11TuneUpdated12notificationy10Foundation12NotificationV_tF",
-            "moduleName": "SaavnSDK",
-            "objc_name": "currentJioTuneUpdatedWithNotification:",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeCurrentJioTuneClicked",
-            "printedName": "removeCurrentJioTuneClicked()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)removeCurrentJioTuneClicked",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC013removeCurrentC11TuneClickedyyF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "handleDeactiveResponse",
-            "printedName": "handleDeactiveResponse(notification:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Notification",
-                "printedName": "Foundation.Notification",
-                "usr": "s:10Foundation12NotificationV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)handleDeactiveResponseWithNotification:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC22handleDeactiveResponse12notificationy10Foundation12NotificationV_tF",
-            "moduleName": "SaavnSDK",
-            "objc_name": "handleDeactiveResponseWithNotification:",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "refreshData",
-            "printedName": "refreshData()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)refreshData",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC11refreshDatayyF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "tableView",
-            "printedName": "tableView(_:numberOfRowsInSection:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UITableView",
-                "printedName": "UIKit.UITableView",
-                "usr": "c:objc(cs)UITableView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)tableView:numberOfRowsInSection:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC05tableE0_21numberOfRowsInSectionSiSo07UITableE0C_SitF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "tableView:numberOfRowsInSection:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "tableView",
-            "printedName": "tableView(_:cellForRowAt:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UITableViewCell",
-                "printedName": "UIKit.UITableViewCell",
-                "usr": "c:objc(cs)UITableViewCell"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UITableView",
-                "printedName": "UIKit.UITableView",
-                "usr": "c:objc(cs)UITableView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "IndexPath",
-                "printedName": "Foundation.IndexPath",
-                "usr": "s:10Foundation9IndexPathV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)tableView:cellForRowAtIndexPath:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC05tableE0_12cellForRowAtSo07UITableE4CellCSo0lE0C_10Foundation9IndexPathVtF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "tableView:cellForRowAtIndexPath:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "tableView",
-            "printedName": "tableView(_:didSelectRowAt:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UITableView",
-                "printedName": "UIKit.UITableView",
-                "usr": "c:objc(cs)UITableView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "IndexPath",
-                "printedName": "Foundation.IndexPath",
-                "usr": "s:10Foundation9IndexPathV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)tableView:didSelectRowAtIndexPath:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC05tableE0_14didSelectRowAtySo07UITableE0C_10Foundation9IndexPathVtF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "tableView:didSelectRowAtIndexPath:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "scrollViewWillBeginDragging",
-            "printedName": "scrollViewWillBeginDragging(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIScrollView",
-                "printedName": "UIKit.UIScrollView",
-                "usr": "c:objc(cs)UIScrollView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)scrollViewWillBeginDragging:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC06scrollE17WillBeginDraggingyySo08UIScrollE0CF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "scrollViewWillBeginDragging:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "searchBar",
-            "printedName": "searchBar(_:textDidChange:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UISearchBar",
-                "printedName": "UIKit.UISearchBar",
-                "usr": "c:objc(cs)UISearchBar"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)searchBar:textDidChange:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC9searchBar_13textDidChangeySo08UISearchH0C_SStF",
-            "moduleName": "SaavnSDK",
-            "objc_name": "searchBar:textDidChange:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "searchBarTextDidBeginEditing",
-            "printedName": "searchBarTextDidBeginEditing(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UISearchBar",
-                "printedName": "UIKit.UISearchBar",
-                "usr": "c:objc(cs)UISearchBar"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)searchBarTextDidBeginEditing:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC28searchBarTextDidBeginEditingyySo08UISearchH0CF",
-            "moduleName": "SaavnSDK",
-            "objc_name": "searchBarTextDidBeginEditing:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "searchBarCancelButtonClicked",
-            "printedName": "searchBarCancelButtonClicked(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UISearchBar",
-                "printedName": "UIKit.UISearchBar",
-                "usr": "c:objc(cs)UISearchBar"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)searchBarCancelButtonClicked:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC28searchBarCancelButtonClickedyySo08UISearchH0CF",
-            "moduleName": "SaavnSDK",
-            "objc_name": "searchBarCancelButtonClicked:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "searchBarSearchButtonClicked",
-            "printedName": "searchBarSearchButtonClicked(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UISearchBar",
-                "printedName": "UIKit.UISearchBar",
-                "usr": "c:objc(cs)UISearchBar"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)searchBarSearchButtonClicked:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC28searchBarSearchButtonClickedyySo08UISearchH0CF",
-            "moduleName": "SaavnSDK",
-            "objc_name": "searchBarSearchButtonClicked:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "searchBarTextDidEndEditing",
-            "printedName": "searchBarTextDidEndEditing(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UISearchBar",
-                "printedName": "UIKit.UISearchBar",
-                "usr": "c:objc(cs)UISearchBar"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)searchBarTextDidEndEditing:",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC26searchBarTextDidEndEditingyySo08UISearchH0CF",
-            "moduleName": "SaavnSDK",
-            "objc_name": "searchBarTextDidEndEditing:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getScreenName",
-            "printedName": "getScreenName()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTunesViewController(im)getScreenName",
-            "mangledName": "$s8SaavnSDK22JioTunesViewControllerC13getScreenNameSSSgyF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "getScreenName",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@SaavnSDK@objc(cs)JioTunesViewController",
-        "mangledName": "$s8SaavnSDK22JioTunesViewControllerC",
-        "moduleName": "SaavnSDK",
-        "declAttributes": [
-          "Custom",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)GroupVC",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "SaavnSDK.GroupVC",
-          "SaavnSDK.SaavnVC_n",
-          "UIKit.UIViewController",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "WebSocketDelegate",
-            "printedName": "WebSocketDelegate",
-            "usr": "s:10Starscream17WebSocketDelegateP",
-            "mangledName": "$s10Starscream17WebSocketDelegateP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "WebSocketPongDelegate",
-            "printedName": "WebSocketPongDelegate",
-            "usr": "s:10Starscream21WebSocketPongDelegateP",
-            "mangledName": "$s10Starscream21WebSocketPongDelegateP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
         ]
       },
       {
@@ -2305,6 +1701,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2352,13 +1758,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "SaavnSDK",
-        "printedName": "SaavnSDK",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK"
       },
       {
         "kind": "Import",
@@ -2853,8 +2252,8 @@
       },
       {
         "kind": "Import",
-        "name": "Starscream",
-        "printedName": "Starscream",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "SaavnSDK",
         "declAttributes": [
@@ -3418,6 +2817,28 @@
               "ObjC",
               "Custom",
               "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initNavBarItems",
+            "printedName": "initNavBarItems()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SaavnSDK14JioTunesHomeVCC15initNavBarItemsyyF",
+            "mangledName": "$s8SaavnSDK14JioTunesHomeVCC15initNavBarItemsyyF",
+            "moduleName": "SaavnSDK",
+            "declAttributes": [
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -4131,97 +3552,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Starscream",
-        "printedName": "Starscream",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Starscream",
-        "printedName": "Starscream",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK"
       },
       {
         "kind": "Import",
@@ -6040,6 +5370,87 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Starscream",
+        "printedName": "Starscream",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Starscream",
+        "printedName": "Starscream",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SaavnSDK"
       },
       {
         "kind": "Import",
@@ -7863,442 +7274,6 @@
         "moduleName": "SaavnSDK",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Starscream",
-        "printedName": "Starscream",
-        "declKind": "Import",
-        "moduleName": "SaavnSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "JioTuneTrendingViewController",
-        "printedName": "JioTuneTrendingViewController",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "viewDidLoad",
-            "printedName": "viewDidLoad()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController(im)viewDidLoad",
-            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC11viewDidLoadyyF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "viewDidLoad",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "fetchData",
-            "printedName": "fetchData(forPage:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "usr": "s:Su"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController(im)fetchDataForPage:",
-            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC9fetchData7forPageySu_tF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "fetchDataForPage:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(nibName:bundle:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "JioTuneTrendingViewController",
-                "printedName": "SaavnSDK.JioTuneTrendingViewController",
-                "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Bundle?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bundle",
-                    "printedName": "Foundation.Bundle",
-                    "usr": "c:objc(cs)NSBundle"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController(im)initWithNibName:bundle:",
-            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithNibName:bundle:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SaavnSDK.JioTuneTrendingViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "JioTuneTrendingViewController",
-                    "printedName": "SaavnSDK.JioTuneTrendingViewController",
-                    "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController(im)initWithCoder:",
-            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Required"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "websocketDidConnect",
-            "printedName": "websocketDidConnect(socket:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WebSocketClient",
-                "printedName": "Starscream.WebSocketClient",
-                "usr": "s:10Starscream15WebSocketClientP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SaavnSDK29JioTuneTrendingViewControllerC19websocketDidConnect6sockety10Starscream15WebSocketClient_p_tF",
-            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC19websocketDidConnect6sockety10Starscream15WebSocketClient_p_tF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "websocketDidDisconnect",
-            "printedName": "websocketDidDisconnect(socket:error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WebSocketClient",
-                "printedName": "Starscream.WebSocketClient",
-                "usr": "s:10Starscream15WebSocketClientP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Error?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SaavnSDK29JioTuneTrendingViewControllerC22websocketDidDisconnect6socket5errory10Starscream15WebSocketClient_p_s5Error_pSgtF",
-            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC22websocketDidDisconnect6socket5errory10Starscream15WebSocketClient_p_s5Error_pSgtF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "websocketDidReceiveMessage",
-            "printedName": "websocketDidReceiveMessage(socket:text:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WebSocketClient",
-                "printedName": "Starscream.WebSocketClient",
-                "usr": "s:10Starscream15WebSocketClientP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SaavnSDK29JioTuneTrendingViewControllerC26websocketDidReceiveMessage6socket4texty10Starscream15WebSocketClient_p_SStF",
-            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC26websocketDidReceiveMessage6socket4texty10Starscream15WebSocketClient_p_SStF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "websocketDidReceiveData",
-            "printedName": "websocketDidReceiveData(socket:data:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WebSocketClient",
-                "printedName": "Starscream.WebSocketClient",
-                "usr": "s:10Starscream15WebSocketClientP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SaavnSDK29JioTuneTrendingViewControllerC23websocketDidReceiveData6socket4datay10Starscream15WebSocketClient_p_10Foundation0K0VtF",
-            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC23websocketDidReceiveData6socket4datay10Starscream15WebSocketClient_p_10Foundation0K0VtF",
-            "moduleName": "SaavnSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getScreenName",
-            "printedName": "getScreenName()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@SaavnSDK@objc(cs)JioTuneTrendingViewController(im)getScreenName",
-            "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC13getScreenNameSSSgyF",
-            "moduleName": "SaavnSDK",
-            "overriding": true,
-            "objc_name": "getScreenName",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@SaavnSDK@objc(cs)JioTuneTrendingViewController",
-        "mangledName": "$s8SaavnSDK29JioTuneTrendingViewControllerC",
-        "moduleName": "SaavnSDK",
-        "declAttributes": [
-          "Custom",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)ListVC",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "SaavnSDK.ListVC",
-          "SaavnSDK.GroupVC",
-          "SaavnSDK.SaavnVC_n",
-          "UIKit.UIViewController",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "WebSocketDelegate",
-            "printedName": "WebSocketDelegate",
-            "usr": "s:10Starscream17WebSocketDelegateP",
-            "mangledName": "$s10Starscream17WebSocketDelegateP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
         ]
       },
       {
@@ -12782,6 +11757,29 @@
           },
           {
             "kind": "Function",
+            "name": "updateJioTuneSetTS",
+            "printedName": "updateJioTuneSetTS()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SaavnSDK@@objc(cs)UserData(im)updateJioTuneSetTS",
+            "mangledName": "$sSo8UserDataC8SaavnSDKE18updateJioTuneSetTSyyF",
+            "moduleName": "SaavnSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "shouldHighlightVideoTab",
             "printedName": "shouldHighlightVideoTab()",
             "children": [
@@ -12877,1855 +11875,1813 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTunesViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 257,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTunesViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 586,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTunesViewController.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTuneTrendingViewController.swift",
       "kind": "Array",
-      "offset": 637,
+      "offset": 364,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTunesViewController.swift",
-      "kind": "Dictionary",
-      "offset": 820,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTunesViewController.swift",
-      "kind": "Array",
-      "offset": 862,
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTuneTrendingViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 464,
       "length": 2,
-      "value": "[]"
+      "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTunesViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 903,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTuneTrendingViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 540,
+      "length": 2,
+      "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
       "kind": "IntegerLiteral",
       "offset": 419,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
       "kind": "IntegerLiteral",
       "offset": 431,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
       "kind": "BooleanLiteral",
       "offset": 656,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
       "kind": "IntegerLiteral",
       "offset": 725,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
       "kind": "IntegerLiteral",
       "offset": 1810,
       "length": 2,
       "value": "58"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableVC.swift",
       "kind": "StringLiteral",
       "offset": 172,
       "length": 18,
       "value": "\"SaavnSDK.JioTuneAvailableVC\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/JioTune Cells\/JioTuneCellStandard.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/JioTune Cells\/JioTuneCellStandard.swift",
       "kind": "StringLiteral",
       "offset": 885,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/JioTune Cells\/JioTuneCellStandard.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/JioTune Cells\/JioTuneCellStandard.swift",
       "kind": "IntegerLiteral",
       "offset": 918,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableTVCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableTVCell.swift",
       "kind": "BooleanLiteral",
       "offset": 306,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableTVCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableTVCell.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableTVCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneAvailableVC\/JioTuneAvailableTVCell.swift",
       "kind": "IntegerLiteral",
       "offset": 474,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Share\/TableShare\/TableShareCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Share\/TableShare\/TableShareCell.swift",
       "kind": "StringLiteral",
       "offset": 301,
       "length": 16,
       "value": "\"TableShareCell\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Share\/CollectionShare\/CollectionShareCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Share\/CollectionShare\/CollectionShareCell.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 19,
       "value": "\"ShareModalNewCell\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/InteractiveTranslation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/InteractiveTranslation.swift",
       "kind": "IntegerLiteral",
       "offset": 277,
       "length": 4,
       "value": "1500"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/InteractiveTranslation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/InteractiveTranslation.swift",
       "kind": "FloatLiteral",
       "offset": 326,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/InteractiveTranslation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/InteractiveTranslation.swift",
       "kind": "BooleanLiteral",
       "offset": 481,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/InteractiveTranslation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/InteractiveTranslation.swift",
       "kind": "BooleanLiteral",
       "offset": 518,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/InteractiveTranslation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/InteractiveTranslation.swift",
       "kind": "BooleanLiteral",
       "offset": 549,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderButton.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderButton.swift",
       "kind": "BooleanLiteral",
       "offset": 524,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderButton.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderButton.swift",
       "kind": "BooleanLiteral",
       "offset": 615,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderButton.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderButton.swift",
       "kind": "BooleanLiteral",
       "offset": 696,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderButton.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderButton.swift",
       "kind": "BooleanLiteral",
       "offset": 776,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 674,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
       "kind": "IntegerLiteral",
       "offset": 798,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
       "kind": "IntegerLiteral",
       "offset": 881,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
       "kind": "IntegerLiteral",
       "offset": 966,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
       "kind": "IntegerLiteral",
       "offset": 1017,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 1137,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/SlideTranslation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/SlideTranslation.swift",
       "kind": "BooleanLiteral",
       "offset": 458,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/SlideTranslation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/SlideTranslation.swift",
       "kind": "StringLiteral",
       "offset": 144,
       "length": 16,
       "value": "\"SaavnSDK.SlideTranslation\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/ModuleCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/ModuleCell.swift",
       "kind": "Array",
       "offset": 6161,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/ModuleCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/ModuleCell.swift",
       "kind": "Array",
       "offset": 6204,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/ModuleCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/ModuleCell.swift",
       "kind": "Array",
       "offset": 6239,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Models\/PaginatedFeed.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Models\/PaginatedFeed.swift",
       "kind": "Array",
       "offset": 389,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Models\/PaginatedFeed.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Models\/PaginatedFeed.swift",
       "kind": "IntegerLiteral",
       "offset": 417,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Models\/PaginatedFeed.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Models\/PaginatedFeed.swift",
       "kind": "IntegerLiteral",
       "offset": 446,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
       "kind": "Array",
-      "offset": 520,
+      "offset": 540,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 562,
+      "offset": 582,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 927,
+      "offset": 947,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 962,
+      "offset": 982,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
       "kind": "Dictionary",
-      "offset": 1012,
+      "offset": 1032,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 1114,
+      "offset": 1134,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 1270,
+      "offset": 1290,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunesHome\/JioTunesHomeVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 16847,
+      "offset": 19135,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTuneMenuHeaderView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTuneMenuHeaderView.swift",
       "kind": "IntegerLiteral",
       "offset": 684,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Module\/Footer\/ModuleFooter.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Module\/Footer\/ModuleFooter.swift",
       "kind": "StringLiteral",
       "offset": 146,
       "length": 12,
       "value": "\"SaavnSDK.ModuleFooter\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/MediaUtil.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/MediaUtil.swift",
       "kind": "IntegerLiteral",
       "offset": 995,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/HorizontalScrollTypes.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/HorizontalScrollTypes.swift",
       "kind": "IntegerLiteral",
       "offset": 7471,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Search\/Explore Tab\/Models\/ExploreFeed.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Search\/Explore Tab\/Models\/ExploreFeed.swift",
       "kind": "Array",
       "offset": 253,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Search\/Explore Tab\/Models\/ExploreFeed.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Search\/Explore Tab\/Models\/ExploreFeed.swift",
       "kind": "Array",
       "offset": 318,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Search\/Explore Tab\/Models\/ExploreFeed.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Search\/Explore Tab\/Models\/ExploreFeed.swift",
       "kind": "StringLiteral",
       "offset": 340,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Modules\/JioTuneModule.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Modules\/JioTuneModule.swift",
       "kind": "Array",
       "offset": 340,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Modules\/JioTuneModule.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Modules\/JioTuneModule.swift",
       "kind": "StringLiteral",
       "offset": 147,
       "length": 13,
       "value": "\"SaavnSDK.JioTuneModule\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Videos\/PlayerCallout.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Videos\/PlayerCallout.swift",
       "kind": "IntegerLiteral",
       "offset": 357,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Videos\/PlayerCallout.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Videos\/PlayerCallout.swift",
       "kind": "IntegerLiteral",
       "offset": 357,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Extension\/UIView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Extension\/UIView.swift",
       "kind": "IntegerLiteral",
       "offset": 530,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Extension\/UIView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Extension\/UIView.swift",
       "kind": "BooleanLiteral",
       "offset": 557,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Layouts\/GridLayout.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Layouts\/GridLayout.swift",
       "kind": "IntegerLiteral",
       "offset": 509,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Layouts\/GridLayout.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Layouts\/GridLayout.swift",
       "kind": "Array",
       "offset": 580,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Layouts\/GridLayout.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Layouts\/GridLayout.swift",
       "kind": "IntegerLiteral",
       "offset": 824,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Layouts\/GridLayout.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Layouts\/GridLayout.swift",
       "kind": "IntegerLiteral",
       "offset": 937,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Layouts\/GridLayout.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Layouts\/GridLayout.swift",
       "kind": "IntegerLiteral",
       "offset": 1134,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunePlayer.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunePlayer.swift",
       "kind": "BooleanLiteral",
       "offset": 571,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunePlayer.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunePlayer.swift",
       "kind": "StringLiteral",
       "offset": 599,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunePlayer.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunePlayer.swift",
       "kind": "StringLiteral",
       "offset": 629,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunePlayer.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunePlayer.swift",
       "kind": "BooleanLiteral",
       "offset": 903,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTunePlayer.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTunePlayer.swift",
       "kind": "BooleanLiteral",
       "offset": 1784,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
       "kind": "IntegerLiteral",
       "offset": 506,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
       "kind": "IntegerLiteral",
       "offset": 518,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 18,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
       "kind": "StringLiteral",
       "offset": 594,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
       "kind": "IntegerLiteral",
       "offset": 637,
       "length": 2,
       "value": "45"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
       "kind": "IntegerLiteral",
       "offset": 677,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/TagsView\/TagsView.swift",
       "kind": "StringLiteral",
       "offset": 298,
       "length": 8,
       "value": "\"SaavnSDK.TagsView\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
       "kind": "IntegerLiteral",
       "offset": 384,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
       "kind": "Array",
       "offset": 433,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
       "kind": "Array",
       "offset": 488,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
       "kind": "StringLiteral",
       "offset": 141,
       "length": 3,
       "value": "\"SaavnSDK.Tag\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
       "kind": "Array",
       "offset": 1396,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Models\/TagsApi.swift",
       "kind": "IntegerLiteral",
       "offset": 1453,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneWebSocket.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneWebSocket.swift",
       "kind": "StringLiteral",
-      "offset": 265,
+      "offset": 266,
       "length": 4,
       "value": "\"10\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneWebSocket.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneWebSocket.swift",
       "kind": "IntegerLiteral",
-      "offset": 380,
+      "offset": 381,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneWebSocket.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneWebSocket.swift",
       "kind": "IntegerLiteral",
-      "offset": 409,
+      "offset": 410,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Module\/ModuleHeader\/ModuleHeader.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Module\/ModuleHeader\/ModuleHeader.swift",
       "kind": "StringLiteral",
       "offset": 146,
       "length": 12,
       "value": "\"SaavnSDK.ModuleHeader\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
-      "kind": "Array",
-      "offset": 457,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
-      "kind": "BooleanLiteral",
-      "offset": 499,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
-      "kind": "IntegerLiteral",
-      "offset": 608,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
-      "kind": "IntegerLiteral",
-      "offset": 870,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1026,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
-      "kind": "StringLiteral",
-      "offset": 167,
-      "length": 14,
-      "value": "\"SaavnSDK.JioTunesMenuVC\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11775,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 672,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 768,
-      "length": 8,
-      "value": "\"Videos\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 791,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1311,
-      "length": 5,
-      "value": "\"CVN\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1333,
-      "length": 6,
-      "value": "\"momd\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1524,
-      "length": 5,
-      "value": "\"CVN\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1746,
-      "length": 46,
-      "value": "\"Unresolved error \""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1772,
-      "length": 1,
-      "value": "\", \""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1791,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneHomeFeed.swift",
-      "kind": "Array",
-      "offset": 258,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneHomeFeed.swift",
-      "kind": "BooleanLiteral",
-      "offset": 302,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneHomeFeed.swift",
-      "kind": "BooleanLiteral",
-      "offset": 342,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneHomeFeed.swift",
-      "kind": "BooleanLiteral",
-      "offset": 381,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneHomeFeed.swift",
-      "kind": "StringLiteral",
-      "offset": 497,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneFeed.swift",
-      "kind": "Array",
-      "offset": 410,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneFeed.swift",
-      "kind": "BooleanLiteral",
-      "offset": 454,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneFeed.swift",
-      "kind": "BooleanLiteral",
-      "offset": 538,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneFeed.swift",
-      "kind": "BooleanLiteral",
-      "offset": 577,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneFeed.swift",
-      "kind": "StringLiteral",
-      "offset": 212,
-      "length": 11,
-      "value": "\"SaavnSDK.JioTuneFeed\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 228,
-      "length": 2,
-      "value": "27"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 309,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 362,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 408,
-      "length": 2,
-      "value": "21"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 450,
-      "length": 2,
-      "value": "40"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 499,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 757,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 821,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 866,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 909,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "FloatLiteral",
-      "offset": 971,
-      "length": 6,
-      "value": "0.5625"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "FloatLiteral",
-      "offset": 1054,
-      "length": 6,
-      "value": "1.3333"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1135,
-      "length": 2,
-      "value": "45"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1179,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1225,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1325,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1372,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 412,
-      "length": 18,
-      "value": "\"personalisedData\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 455,
-      "length": 6,
-      "value": "\"data\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 412,
-      "length": 18,
-      "value": "\"personalisedData\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 455,
-      "length": 6,
-      "value": "\"data\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4663,
-      "length": 6,
-      "value": "\"blob\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4693,
-      "length": 13,
-      "value": "\"interactive\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4727,
-      "length": 11,
-      "value": "\"last_page\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4663,
-      "length": 6,
-      "value": "\"blob\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4693,
-      "length": 13,
-      "value": "\"interactive\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4727,
-      "length": 11,
-      "value": "\"last_page\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4799,
-      "length": 11,
-      "value": "\"home_page\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4839,
-      "length": 19,
-      "value": "\"streaming_details\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4879,
-      "length": 11,
-      "value": "\"top_songs\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4913,
-      "length": 13,
-      "value": "\"top_artists\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4951,
-      "length": 15,
-      "value": "\"top_playlists\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4993,
-      "length": 17,
-      "value": "\"podcast_details\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5034,
-      "length": 14,
-      "value": "\"mood_details\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5072,
-      "length": 14,
-      "value": "\"top_jioTunes\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5113,
-      "length": 17,
-      "value": "\"summary_details\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5158,
-      "length": 18,
-      "value": "\"curated_playlist\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4799,
-      "length": 11,
-      "value": "\"home_page\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4839,
-      "length": 19,
-      "value": "\"streaming_details\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4879,
-      "length": 11,
-      "value": "\"top_songs\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4913,
-      "length": 13,
-      "value": "\"top_artists\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4951,
-      "length": 15,
-      "value": "\"top_playlists\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4993,
-      "length": 17,
-      "value": "\"podcast_details\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5034,
-      "length": 14,
-      "value": "\"mood_details\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5072,
-      "length": 14,
-      "value": "\"top_jioTunes\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5113,
-      "length": 17,
-      "value": "\"summary_details\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5158,
-      "length": 18,
-      "value": "\"curated_playlist\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5572,
-      "length": 11,
-      "value": "\"SaavnSDK.BlobDetails\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 852,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 979,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1112,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1243,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1725,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1734,
-      "length": 11,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1747,
-      "length": 9,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1725,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1734,
-      "length": 11,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1747,
-      "length": 9,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1725,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1734,
-      "length": 11,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1747,
-      "length": 9,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1800,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1812,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1820,
-      "length": 4,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1800,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1812,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1820,
-      "length": 4,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1800,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1812,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1820,
-      "length": 4,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1868,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1877,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1868,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1877,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1868,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1877,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "StringLiteral",
       "offset": 291,
       "length": 16,
       "value": "\"www.google.com\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "BooleanLiteral",
       "offset": 613,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "BooleanLiteral",
       "offset": 653,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
       "offset": 780,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4405,
+      "offset": 4395,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4408,
+      "offset": 4398,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4413,
+      "offset": 4403,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4419,
+      "offset": 4409,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4425,
+      "offset": 4415,
       "length": 3,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4430,
+      "offset": 4420,
       "length": 5,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4437,
+      "offset": 4427,
       "length": 6,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4445,
+      "offset": 4435,
       "length": 5,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4452,
+      "offset": 4442,
       "length": 7,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4405,
+      "offset": 4395,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4408,
+      "offset": 4398,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4413,
+      "offset": 4403,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4419,
+      "offset": 4409,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4425,
+      "offset": 4415,
       "length": 3,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4430,
+      "offset": 4420,
       "length": 5,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4437,
+      "offset": 4427,
       "length": 6,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4445,
+      "offset": 4435,
       "length": 5,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4452,
+      "offset": 4442,
       "length": 7,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4545,
+      "offset": 4535,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4559,
+      "offset": 4549,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4545,
+      "offset": 4535,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 4559,
+      "offset": 4549,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 4594,
+      "offset": 4584,
       "length": 8,
       "value": "\"SaavnSDK.BodyPart\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 5116,
+      "offset": 5106,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 5147,
+      "offset": 5137,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 5180,
+      "offset": 5170,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 5214,
+      "offset": 5204,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 5116,
+      "offset": 5106,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 5147,
+      "offset": 5137,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 5180,
+      "offset": 5170,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/SaavnSDK\/AlamofireWrapper.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/SaavnSDK\/AlamofireWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 5214,
+      "offset": 5204,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Module\/Module.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
+      "kind": "Array",
+      "offset": 457,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 499,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 608,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 870,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1026,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
+      "kind": "StringLiteral",
+      "offset": 167,
+      "length": 14,
+      "value": "\"SaavnSDK.JioTunesMenuVC\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneMenuVC\/JioTunesMenuVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11928,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 672,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 768,
+      "length": 8,
+      "value": "\"Videos\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 791,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1311,
+      "length": 5,
+      "value": "\"CVN\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1333,
+      "length": 6,
+      "value": "\"momd\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1524,
+      "length": 5,
+      "value": "\"CVN\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1746,
+      "length": 46,
+      "value": "\"Unresolved error \""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1772,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Classes\/VideoCaching\/CoreData\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1791,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneHomeFeed.swift",
+      "kind": "Array",
+      "offset": 258,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneHomeFeed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 302,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneHomeFeed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 342,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneHomeFeed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 381,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneHomeFeed.swift",
+      "kind": "StringLiteral",
+      "offset": 497,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneFeed.swift",
+      "kind": "Array",
+      "offset": 410,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneFeed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 454,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneFeed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 538,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneFeed.swift",
+      "kind": "BooleanLiteral",
+      "offset": 577,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/Models\/JioTuneFeed.swift",
+      "kind": "StringLiteral",
+      "offset": 212,
+      "length": 11,
+      "value": "\"SaavnSDK.JioTuneFeed\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 228,
+      "length": 2,
+      "value": "27"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 309,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 362,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 408,
+      "length": 2,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 450,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 499,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 757,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 821,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 866,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 909,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 971,
+      "length": 6,
+      "value": "0.5625"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1054,
+      "length": 6,
+      "value": "1.3333"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1135,
+      "length": 2,
+      "value": "45"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1179,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1225,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1325,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/LayoutConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1372,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 412,
+      "length": 18,
+      "value": "\"personalisedData\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 412,
+      "length": 18,
+      "value": "\"personalisedData\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4663,
+      "length": 6,
+      "value": "\"blob\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4693,
+      "length": 13,
+      "value": "\"interactive\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4727,
+      "length": 11,
+      "value": "\"last_page\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4663,
+      "length": 6,
+      "value": "\"blob\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4693,
+      "length": 13,
+      "value": "\"interactive\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4727,
+      "length": 11,
+      "value": "\"last_page\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4799,
+      "length": 11,
+      "value": "\"home_page\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4839,
+      "length": 19,
+      "value": "\"streaming_details\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4879,
+      "length": 11,
+      "value": "\"top_songs\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4913,
+      "length": 13,
+      "value": "\"top_artists\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4951,
+      "length": 15,
+      "value": "\"top_playlists\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4993,
+      "length": 17,
+      "value": "\"podcast_details\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5034,
+      "length": 14,
+      "value": "\"mood_details\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5072,
+      "length": 14,
+      "value": "\"top_jioTunes\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5113,
+      "length": 17,
+      "value": "\"summary_details\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5158,
+      "length": 18,
+      "value": "\"curated_playlist\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4799,
+      "length": 11,
+      "value": "\"home_page\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4839,
+      "length": 19,
+      "value": "\"streaming_details\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4879,
+      "length": 11,
+      "value": "\"top_songs\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4913,
+      "length": 13,
+      "value": "\"top_artists\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4951,
+      "length": 15,
+      "value": "\"top_playlists\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4993,
+      "length": 17,
+      "value": "\"podcast_details\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5034,
+      "length": 14,
+      "value": "\"mood_details\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5072,
+      "length": 14,
+      "value": "\"top_jioTunes\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5113,
+      "length": 17,
+      "value": "\"summary_details\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5158,
+      "length": 18,
+      "value": "\"curated_playlist\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Replay2021\/ReplayModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5572,
+      "length": 11,
+      "value": "\"SaavnSDK.BlobDetails\""
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 852,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 979,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1112,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1243,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1725,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1734,
+      "length": 11,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1747,
+      "length": 9,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1725,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1734,
+      "length": 11,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1747,
+      "length": 9,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1725,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1734,
+      "length": 11,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1747,
+      "length": 9,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1800,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1812,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1820,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1800,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1812,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1820,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1800,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1812,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1820,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1868,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1877,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1868,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1877,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1868,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/BadgeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1877,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Module\/Module.swift",
       "kind": "Array",
       "offset": 289,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Module\/Module.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Module\/Module.swift",
       "kind": "StringLiteral",
       "offset": 140,
       "length": 6,
       "value": "\"SaavnSDK.Module\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneUtil.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneUtil.swift",
       "kind": "IntegerLiteral",
       "offset": 306,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneUtil.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneUtil.swift",
       "kind": "StringLiteral",
       "offset": 410,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/RequestedJioTunesListVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/RequestedJioTunesListVC.swift",
       "kind": "Array",
-      "offset": 270,
+      "offset": 269,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/ViewControllers\/PannableViewController.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/ViewControllers\/PannableViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 391,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderFooterView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderFooterView.swift",
       "kind": "StringLiteral",
       "offset": 336,
       "length": 26,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderFooterView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderFooterView.swift",
       "kind": "StringLiteral",
       "offset": 361,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderFooterView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderFooterView.swift",
       "kind": "StringLiteral",
       "offset": 396,
       "length": 26,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderFooterView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/Loader\/LoaderFooterView.swift",
       "kind": "StringLiteral",
       "offset": 421,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/Translation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/Translation.swift",
       "kind": "FloatLiteral",
       "offset": 332,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/Translation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/Translation.swift",
       "kind": "FloatLiteral",
       "offset": 366,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/Translation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/Translation.swift",
       "kind": "FloatLiteral",
       "offset": 403,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Views\/SearchBar\/SearchView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Views\/SearchBar\/SearchView.swift",
       "kind": "StringLiteral",
       "offset": 2843,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/GeneralGrid\/Model\/VerticalFeed.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/GeneralGrid\/Model\/VerticalFeed.swift",
       "kind": "Array",
       "offset": 667,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/GeneralGrid\/Model\/VerticalFeed.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/GeneralGrid\/Model\/VerticalFeed.swift",
       "kind": "StringLiteral",
       "offset": 810,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/GeneralGrid\/Model\/VerticalFeed.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/GeneralGrid\/Model\/VerticalFeed.swift",
       "kind": "StringLiteral",
       "offset": 830,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/GeneralGrid\/Model\/VerticalFeed.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/GeneralGrid\/Model\/VerticalFeed.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 12,
       "value": "\"SaavnSDK.VerticalFeed\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTuneTrendingViewController.swift",
-      "kind": "Array",
-      "offset": 361,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTuneTrendingViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 461,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Home\/JioTune\/JioTuneTrendingViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 537,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/PresentDismissTranslation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/PresentDismissTranslation.swift",
       "kind": "BooleanLiteral",
       "offset": 465,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/Transitions\/PresentDismissTranslation.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/Transitions\/PresentDismissTranslation.swift",
       "kind": "StringLiteral",
       "offset": 146,
       "length": 25,
       "value": "\"SaavnSDK.PresentDismissTranslation\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/GeneralGrid\/GeneralGridVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/GeneralGrid\/GeneralGridVC.swift",
       "kind": "BooleanLiteral",
       "offset": 599,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/GeneralGrid\/GeneralGridVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/GeneralGrid\/GeneralGridVC.swift",
       "kind": "IntegerLiteral",
       "offset": 889,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/GeneralGrid\/GeneralGridVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/GeneralGrid\/GeneralGridVC.swift",
       "kind": "IntegerLiteral",
       "offset": 940,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/GeneralGrid\/GeneralGridVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/GeneralGrid\/GeneralGridVC.swift",
       "kind": "StringLiteral",
       "offset": 1022,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/GeneralGrid\/GeneralGridVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/GeneralGrid\/GeneralGridVC.swift",
       "kind": "StringLiteral",
       "offset": 172,
       "length": 13,
       "value": "\"SaavnSDK.GeneralGridVC\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Models\/BaseModel.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Models\/BaseModel.swift",
       "kind": "BooleanLiteral",
       "offset": 555,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Models\/BaseModel.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Models\/BaseModel.swift",
       "kind": "StringLiteral",
       "offset": 769,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Browse\/Custom Views\/EmptyStateView.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Browse\/Custom Views\/EmptyStateView.swift",
       "kind": "StringLiteral",
       "offset": 562,
       "length": 16,
       "value": "\"EmptyStateView\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/BasicCell.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Module\/ModuleCell\/BasicCell.swift",
       "kind": "BooleanLiteral",
       "offset": 513,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Search\/Explore Tab\/Models\/ExploreModel.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/View Controllers\/Root VCs (Main Tabs)\/Search\/Explore Tab\/Models\/ExploreModel.swift",
       "kind": "Array",
       "offset": 1364,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneUnavailableVC\/JioTuneUnavailableVC.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/JioTunesStore\/JioTuneSet\/JioTuneUnavailableVC\/JioTuneUnavailableVC.swift",
       "kind": "StringLiteral",
       "offset": 179,
       "length": 20,
       "value": "\"SaavnSDK.JioTuneUnavailableVC\""
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/OtherConstants.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/OtherConstants.swift",
       "kind": "FloatLiteral",
       "offset": 200,
       "length": 4,
       "value": "0.21"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/OtherConstants.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/OtherConstants.swift",
       "kind": "FloatLiteral",
       "offset": 247,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/OtherConstants.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/OtherConstants.swift",
       "kind": "FloatLiteral",
       "offset": 291,
       "length": 4,
       "value": "0.39"
     },
     {
-      "filePath": "\/Users\/newuser\/Desktop\/SDKfromMaster\/Saavn\/Swift\/BaseClasses\/Constants\/OtherConstants.swift",
+      "filePath": "\/Users\/newuser\/Desktop\/iphone\/Saavn\/Swift\/BaseClasses\/Constants\/OtherConstants.swift",
       "kind": "FloatLiteral",
       "offset": 337,
       "length": 3,

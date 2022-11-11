@@ -549,6 +549,12 @@
 #define JIOTUNE_FAILED @"jt_preview:mediafailed"
 #define JIOTUNE_SET @"set_jiotune"
 
+#define JIOTUNE_UNLOAD @"jt_preview:mediaunload"
+#define JIOTUNE_PAUSED @"jt_preview:mediapaused"
+#define JIOTUNE_FAILED @"jt_preview:mediafailed"
+#define JIOTUNE_SET @"set_jiotune"
+#define JIOTUNE_REMOVE @"remove_jiotune"
+#define JIOTUNE_RENEW @"renew_jiotune"
 
 /////////////////////////////////////// Player Event Prefixes & Sufixes ///////////////////////////////////////
 

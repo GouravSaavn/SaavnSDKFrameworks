@@ -48,6 +48,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)deactivateJioTune:(NSString *)vcode digitalServiceId:(NSString *)digitalServiceId;
 
+- (void) handleStreamerPlay;
+
+- (void) handleStreamerProgress;
+
+- (void) handleStreamerPause;
+
+- (void) handleStreamerStopped;
+
+- (void) handleStreamerFinished;
+
+- (void) updateNowPlaying:(NSDictionary*)data;
+
+- (void) handleStreamerFailed:(NSError *)error;
+
+- (void) handlePlayerStalled;
+
+//- (void) handleCloseMiniPlayerTap;
+
 @end
 
 NS_ASSUME_NONNULL_END

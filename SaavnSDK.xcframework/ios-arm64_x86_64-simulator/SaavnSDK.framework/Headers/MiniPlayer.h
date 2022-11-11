@@ -19,13 +19,13 @@
 - (void) showPlayer;
 - (void) playerWasHidden;
 - (void) bouncePreview;
-
+-(void) showCrossButton:(BOOL)showButton ;
 #pragma mark - Now Playing Updates
 - (void) setNowPlaying;
 - (void) clearNowPlaying;
 - (void) setPlayPauseIcon;
 - (void) showBuffering:(BOOL)isBuffering;
-
+- (void) playWeeklyTopSongs ;
 #pragma mark - Video UI
 - (void) addVideoLayer:(AVPlayerLayer *)layer;
 - (void) removeVideoLayer;

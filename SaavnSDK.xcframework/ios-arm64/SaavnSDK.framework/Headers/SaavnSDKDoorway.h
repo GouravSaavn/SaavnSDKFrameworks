@@ -12,7 +12,7 @@
 #import <UIKit/UIKit.h>
 #import "JioSaavnDelegate.h"
 #import "Settings.h"
-
+#import "SaavnStreamer.h"
 
 typedef enum {
     LOGIN_SOURCE_TYPE_JIO  = 0,
@@ -39,23 +39,22 @@ typedef NS_ENUM(int, JioSaavnViewType) {
 
 
 
-
 @property (nonatomic, weak) id <JioSaavnDelegate> delegate;
 @property (nonatomic, weak) id <JioSaavnScrollDelegate> scrolldelegate;
+@property (nonatomic, weak) UINavigationController *parentAppNavBar;
 
 + (SaavnSDKDoorway *) doorway;
 
 //The host app must use this method to manually initialize SDK.
 - (void) initializeSDK;
 
-//The host app must use this method to manually initialize SDK along with Theme
-// true for dark them and false for light theme
-- (void) initializeSDKWithTheme:(BOOL)dark;
-
-
 /// The host app can call this method when logging out of JioSaavn is required.
 /// Notification observer setup is required for this.
 - (void) logOutFromJioSaavn;
+
+//The host app must use this method to manually initialize SDK along with Theme
+// true for dark them and false for light theme
+- (void) initializeSDKWithTheme:(BOOL)dark;
 
 /// The host app can call this method to get the root controller from the SDK.
 ///
@@ -114,18 +113,66 @@ typedef NS_ENUM(int, JioSaavnViewType) {
 /// - parameter url: The URL.
 - (void) handleDeepLinkUrl:(NSURL *) url;
 
-/// The host app can call the setDarkMode method and pass a bool to put app in dark mode
-///
-/// - parameter set: YES for dark mode and NO for light mode
 
-- (void) setDarkMode:(BOOL) set ;
+//for perma URL in recommendations , this method is supposed to be called
+//Pass the same permaURL to this method as in response of getRecommendation 
+
+- (void) handlePermaURL:(NSString *)targetURLString ;
+
+/// The host app can call this method to get the currently playing song , even after app relaunch
+///
+/// returns: Dictionary of song details
+///
+
+
+
+
+-(NSDictionary *) getNowPlaying;
+
+/// The host app can call this method to pause the player
+
+-(void) pausePlayer;
+
+/// The host app can call this method to play the next song
+///
+-(void) clearPlayerQueue;
+
+
+-(void) playNextSong;
+
+/// The host app can call this method to play the previous song
+///
+
+-(void) playPreviousSong;
+
+
+
+-(void) playSongInPlayer;
+
+
+-(void) resumePlayer;
+
+
+- (void) playWeeklyTopSongs ;
+
+ 
+- (NSArray *) getRecommendations; 
+
+- (void) playRecommendations:(NSDictionary *) data;
+
+- (PlayerItemState) getSaavnPlayerState;
 
 /// The host app can call the isDarkMode method and check if the SDK is in dark mode
 ///
 ///
 - (BOOL) isDarkMode;
+////// The host app can call the setDarkMode method and pass a bool to put app in dark mode
+///
+/// - parameter set: YES for dark mode and NO for light mode
+- (void) setDarkMode:(BOOL) set ;
 
-- (BOOL) isSDKLoggedIn ;
+-(void ) showMiniPlayerCrossButton: (BOOL) showButton ;
+
 
 @end
 #endif /* SaavnSDKDoorway_h */

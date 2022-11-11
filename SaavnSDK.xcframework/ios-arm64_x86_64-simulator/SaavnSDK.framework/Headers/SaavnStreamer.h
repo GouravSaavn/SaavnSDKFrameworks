@@ -10,7 +10,9 @@
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MPNowPlayingInfoCenter.h>
 #import <MediaPlayer/MPMediaItem.h>
+#define __SvnSenSDK = 1
 #ifndef __SvnSenSDK
+
 #import "ChromecastManager.h"
 #import "EqualizerManager.h"
 #endif

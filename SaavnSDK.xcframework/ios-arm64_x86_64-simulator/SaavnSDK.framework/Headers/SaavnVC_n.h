@@ -11,7 +11,7 @@
 
 // Parent Controllers
 #import "SaavnNavBar.h"
-#define __SvnSenSDK = 1
+
 // Subclasses
 //#import "EmptyErrorState.h"
 #import "FauxNav.h"

@@ -89,6 +89,11 @@ typedef enum : NSUInteger {
 @property (nonatomic) VPlayerContentMode playerContentMode;
 @property (strong) HistoryObject *queueobj, *radioQueueObj;
 @property (strong) NSMutableDictionary *radioStation;
+#ifdef __SvnSenSDK
+
+@property (nonatomic)  PlayerItemState playerItemState;
+
+#endif
 // Tracking
 @property(nonatomic, strong) NSMutableDictionary *globalParams;
 
@@ -138,7 +143,7 @@ typedef enum : NSUInteger {
 - (NSArray *) getFullQueue;
 - (NSArray *) getCurrentQueue;
 - (NSArray *) getIndexesToSelect;
-
+- (NSUInteger) getCurrentIndex;
 // Chromecast
 #ifndef __SvnSenSDK
 
@@ -182,6 +187,8 @@ typedef enum : NSUInteger {
 
 // Podcast
 - (VPlayerPodcastSpeed) getPodcastSpeed;
+
+
 
 #pragma mark - Queue Actions
 - (void) addQueueToPlaylist;

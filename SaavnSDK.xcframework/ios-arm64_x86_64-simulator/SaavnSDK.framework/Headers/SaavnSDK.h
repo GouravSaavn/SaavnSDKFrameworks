@@ -54,7 +54,7 @@ FOUNDATION_EXPORT const unsigned char saavnSDKVersionString[];
 #import "VideoPlayerVC.h"
 #import "MediaUtil_n.h"
 #import "ListVC.h"
-
+#import "DataManager.h"
 #import "Font_n.h"
 
 #import "Util.h"
@@ -68,13 +68,13 @@ FOUNDATION_EXPORT const unsigned char saavnSDKVersionString[];
  
 // Parent Controllers
 #import "SaavnNC.h"
-#import "DataManager.h"
+
 // View Controllers
 #import "HomeVC.h"
 #import "SearchVC.h"
 #import "BrowseVC.h"
 #import "MyLibraryVC.h"
-#import "CurrentJioTuneButton.h"
+
 #import "SearchEggs.h"
 
 // iPad
@@ -111,4 +111,5 @@ FOUNDATION_EXPORT const unsigned char saavnSDKVersionString[];
 #import "ShareModal.h"
 //#import "SaavnAdView.h"
 #import "SaavnSDKDoorway.h"
+#import "CurrentJioTuneButton.h"
 
