@@ -41,7 +41,7 @@ typedef NS_ENUM(int, JioSaavnViewType) {
 
 @property (nonatomic, weak) id <JioSaavnDelegate> delegate;
 @property (nonatomic, weak) id <JioSaavnScrollDelegate> scrolldelegate;
-@property (nonatomic, weak) UINavigationController *parentAppNavBar;
+@property (nonatomic, weak) UINavigationController *parentAppNavController;
 
 + (SaavnSDKDoorway *) doorway;
 

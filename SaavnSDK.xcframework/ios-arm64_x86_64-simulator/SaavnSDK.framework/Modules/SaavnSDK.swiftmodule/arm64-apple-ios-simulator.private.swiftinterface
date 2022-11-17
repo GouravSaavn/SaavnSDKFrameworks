@@ -13,22 +13,6 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class JioTuneTrendingViewController : SaavnSDK.ListVC {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func fetchData(forPage thePage: Swift.UInt)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension SaavnSDK.JioTuneTrendingViewController : Starscream.WebSocketDelegate {
-  @_Concurrency.MainActor(unsafe) public func websocketDidConnect(socket: Starscream.WebSocketClient)
-  @_Concurrency.MainActor(unsafe) public func websocketDidDisconnect(socket: Starscream.WebSocketClient, error: Swift.Error?)
-  @_Concurrency.MainActor(unsafe) public func websocketDidReceiveMessage(socket: Starscream.WebSocketClient, text: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func websocketDidReceiveData(socket: Starscream.WebSocketClient, data: Foundation.Data)
-}
-extension SaavnSDK.JioTuneTrendingViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func getScreenName() -> Swift.String!
-}
 extension SaavnSDK.SongUtil {
   @objc public static func isJioTuneAvailable(_ song: [Swift.String : Any]) -> Swift.Bool
 }
@@ -282,6 +266,22 @@ extension UIKit.UISearchBar {
     @objc get
     @objc set
   }
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class JioTuneTrendingViewController : SaavnSDK.ListVC {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func fetchData(forPage thePage: Swift.UInt)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension SaavnSDK.JioTuneTrendingViewController : Starscream.WebSocketDelegate {
+  @_Concurrency.MainActor(unsafe) public func websocketDidConnect(socket: Starscream.WebSocketClient)
+  @_Concurrency.MainActor(unsafe) public func websocketDidDisconnect(socket: Starscream.WebSocketClient, error: Swift.Error?)
+  @_Concurrency.MainActor(unsafe) public func websocketDidReceiveMessage(socket: Starscream.WebSocketClient, text: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func websocketDidReceiveData(socket: Starscream.WebSocketClient, data: Foundation.Data)
+}
+extension SaavnSDK.JioTuneTrendingViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func getScreenName() -> Swift.String!
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class GeneralGridVC : SaavnSDK.SaavnVC_n {
   @objc @_Concurrency.MainActor(unsafe) public init?(_ data: Foundation.NSDictionary)

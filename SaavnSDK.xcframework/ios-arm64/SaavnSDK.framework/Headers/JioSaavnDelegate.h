@@ -64,7 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) handlePlayerStalled;
 
-//- (void) handleCloseMiniPlayerTap;
+- (void) handleCloseMiniPlayerTap;
 
 @end
 

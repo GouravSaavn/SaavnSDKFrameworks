@@ -396,12 +396,12 @@ SWIFT_CLASS("_TtC8SaavnSDK13GeneralGridVC")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
-
 @class UIScrollView;
 
 @interface GeneralGridVC (SWIFT_EXTENSION(SaavnSDK))
 - (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
 @end
+
 
 
 
@@ -465,12 +465,6 @@ SWIFT_CLASS("_TtC8SaavnSDK18JioTuneAvailableVC")
 - (id <UIViewControllerInteractiveTransitioning> _Nullable)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning> _Nonnull)animator SWIFT_WARN_UNUSED_RESULT;
 @end
 
-
-
-@interface JioTuneAvailableVC (SWIFT_EXTENSION(SaavnSDK))
-- (NSString * _Null_unspecified)getScreenName SWIFT_WARN_UNUSED_RESULT;
-@end
-
 @class UITableView;
 
 @interface JioTuneAvailableVC (SWIFT_EXTENSION(SaavnSDK))
@@ -479,6 +473,12 @@ SWIFT_CLASS("_TtC8SaavnSDK18JioTuneAvailableVC")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
+
+
+@interface JioTuneAvailableVC (SWIFT_EXTENSION(SaavnSDK))
+- (NSString * _Null_unspecified)getScreenName SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 
 
@@ -645,15 +645,15 @@ SWIFT_CLASS("_TtC8SaavnSDK8TagsView")
 @end
 
 
-@interface TagsView (SWIFT_EXTENSION(SaavnSDK)) <UICollectionViewDataSource>
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
 @interface TagsView (SWIFT_EXTENSION(SaavnSDK)) <UICollectionViewDelegateFlowLayout>
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface TagsView (SWIFT_EXTENSION(SaavnSDK)) <UICollectionViewDataSource>
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -667,10 +667,10 @@ SWIFT_CLASS("_TtC8SaavnSDK11Translation")
 @end
 
 
+
 @interface UIColor (SWIFT_EXTENSION(SaavnSDK))
 - (nullable instancetype)initWithRgbHex:(NSString * _Nullable)rgbHex;
 @end
-
 
 
 
